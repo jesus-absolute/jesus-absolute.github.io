@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/Logo.png">
+    <title>Pizzeria</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Assets Files -->
+
+    <link rel="stylesheet" href="assets/css/right.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <label class="header-menu bi-list" for="menu-categories"></label>
+        <div>
+            <p>Logo</p>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#promotion">Promotions</a>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar2">
+            <a href="index.html#reservation">Reservation</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="general_container tk_container tk-grid">
+            <div class="home_data contenedor">
+                <h1 class="home_title">Welcome to Pizzeria <br> <span>Gran manzana</span> </h1>
+                <h2 class="home_subtitle">Delivering great food for more than 9 years!</h2>
+                <div class="btns">
+                    <a href="menu.html" class="button">Ver Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="general_container tk_container tk-grid">
+            <div class="about_data contenedor">
+
+                <div class="about1">
+                    <h1 class="about_title">HISTORIA.</h1>
+                    <div class="about_subtitle">
+                        <h2>La pizzeria la gran manzana fue creada en 1975 y la primera pizza fue creada por Kimberlin
+                            Geovana Giler Salasar</h2>
+                        <h2>La pizza proviene de Italia, de donde obtuvo su nombre porque se asemeja a la palabra picea,
+                            que los romanos usaban para referirse al color negro que adquiere el pan cuando se calienta.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="about2">
+                    <img class="about-image" src="assets/img/about.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="tk_container tk-grid padding">
+            <div class="home_data contenedor">
+                <p><span class="icon-minus-bold"></span> Reservacion </p>
+                <h1 class="menu_title">Reservar un pedido</h1>
+            </div>
+            <form class="contenedor" action="reserva.php" method="post">
+                
+                <input type="text" name="nombre" placeholder="Su Nombre" id="" required>
+                <input type="text" name="correo" placeholder="Correo" id="" required>
+                <input type="text" name="telefono" placeholder="Telefono" id="" required>
+                <input type="text" name="people" placeholder="# of people" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar" id="boton">
+            </form>
+        </div>
+    </section>
+
+    <section class="promotion" id="promotion">
+        <div class="tk_container tk-grid padding">
+            <div class="promotion_data contenedor">
+                <p><span class="icon-minus-bold"></span> Promociones </p>
+                <div class="imgs-promotion">
+                    <img src="assets/img/Promotions/1.png" alt="">
+                    <img src="assets/img/Promotions/2.png" alt="">
+                    <img src="assets/img/Promotions/3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="general_container tk_container tk-grid">
+            <div class="contact_data contenedor">
+                <div>
+                    <p class="contact-title">¡Mantengámonos en contacto!</p>
+                    <hr class="divider">
+                    <p class="contact-subtitle">¡Envíenos un mensaje y nos pondremos en contacto con usted lo antes posible!</p>
+                </div>
+                <form action="touch.php" method="post">
+                    <input type="text" name="Nombre" placeholder="Nombre" id="" required>
+                    <input type="text" name="Correo" placeholder="Correo" id="" required>
+                    <input type="text" name="Telefono" placeholder="Telefono" id="" required>
+                    <textarea name="Mensaje" id="" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar" id="botton">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright © 2022 - Pizzeria "La gran Manzana"</p>
+    </footer>
+
+</body>
+</html>
