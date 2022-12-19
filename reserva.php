@@ -7,7 +7,7 @@
     $mensaje = $_POST["mensaje"];
     $contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nCantidad: " . $people . "\nTelefono: " . $telefono . "\nMensaje: " . $mensaje;
     mail($destino,"Reservacion", $contenido);
-    $contenido2 = "Ha hecho con exito su reservacion " . $nombre .
+    $contenido2 = "Ha hecho con exito su reservacion " . $nombre;
     mail($correo,"Reservacion",$contenido2);
 
 ?>
