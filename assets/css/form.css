@@ -1,0 +1,89 @@
+#reservation form {
+    width: 90%;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 26px;
+}
+
+#reservation form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#reservation form input, #reservation form textarea {
+    
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+}
+
+#reservation form input {
+    width: 48%;
+}
+
+#reservation form textarea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 80%;
+    max-width: 100%;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+#contact form {
+    padding: 10px 20px;
+    border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 26px;
+    width: 630px;
+}
+
+#contact form input {
+    height: 3rem;
+}
+
+#contact form textarea {
+    height: 8rem;
+}
+
+#contact form input, #contact form textarea {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 16px;
+    border: solid 1px #b1b1b1;
+}
+
+#botton:hover {
+    background-color: #e6dfdf;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width:480) {
+    #reservation form {
+        width: 100%;
+    }
+}
